@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <h1>Welcome to potfolio</h1>
+      <h1>Welcome to portfolio</h1>
     </>
   )
 }

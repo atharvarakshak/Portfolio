@@ -13,7 +13,7 @@ const Header = () => {
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="navbar shadow-md w-full  fixed z-[100] top-0 left-0 rounded-lg "> 
+    <div className="navbar shadow-md w-full  fixed z-[90] top-0 left-0 rounded-lg "> 
       <div className="md:flex items-center justify-between bg-gray-800 py-4 md:px-10 px-7  ">
         {/* Logo section */}
         <div className="font-bold text-2xl cursor-pointer flex items-center gap-1">

@@ -7,6 +7,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import { Hero } from './components/Hero'
 import About from './components/About'
+import Project from './components/Project'
 // import Header from './components/Header'
 // import Footer from './components/Footer'
 
@@ -19,6 +20,7 @@ function App() {
       <Header/>
       <Hero/>
       <About/>
+      <Project/>
       <Footer/>
    </>
   )

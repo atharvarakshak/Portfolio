@@ -42,15 +42,16 @@
 }
 
 
-#preloader{
-  background: #000 url(assets/images/preloader.gif) center;
-  background-repeat: no-repeat ;
+#preloader {
+  background: #000 url(assets/images/preloader.gif) center no-repeat;
   background-size: 20%;
   height: 100vh;
   width: 100%;
   position: fixed;
   z-index: 100;
-  
-  
+  transition: opacity 2s ease-in-out; /* Add transition for opacity */
+}
 
+#preloader.fade-out {
+  opacity: 0;
 }

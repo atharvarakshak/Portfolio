@@ -19,8 +19,11 @@
       var loader = document.getElementById("preloader");
       window.addEventListener("load",()=>{
         setTimeout(() => {
-        loader.style.display = "none";
-      }, 3000); // Delay in milliseconds (2000ms = 2s)
+        loader.classList.add('fade-out');
+        loader.addEventListener('transitionend', () => {
+          loader.style.display = 'none';
+        }, { once: true });
+      }, 2500);
       })
     </script>
 

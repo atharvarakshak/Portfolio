@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { BrowserRouter } from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
 import Illustration from "../assets/images/illustration.svg";
@@ -7,16 +8,25 @@ import githubIcon from '../assets/images/github.svg';
 import whatsapp from '../assets/images/whatsapp.svg';
 import Hello from '../assets/images/Hello.gif';
 import telegram from '../assets/images/telegram.svg';
+import { Application } from '@splinetool/runtime';
 
 export function Hero() {
+  useEffect(() => {
+    const canvas = document.getElementById('canvas3d');
+    const app = new Application(canvas);
+    app.load('https://prod.spline.design/Rh05bwmffWv5jmWc/scene.splinecode');
+    
+  }, []);
+
   return (
-    <div id="home" className="flex justify-evenly p-10 md:p-40 border-2 border-white h-screen">
-      <div className="hero-text border-2 border-white max-h-screen p-8">
+    <div id="home" className="flex items-center justify-evenly p-8 md:p-20 border-2 border-white h-screen">
+      <div className='wrapper bg-theme h-screen lg:h-screen md:h-[65vh] sm:h-[55vh] w-auto absolute top-0 left-0 right-0 opacity-100 z-0'></div>
+      <div className="hero-text border-2 border-white max-h-screen p-8 relative z-10">
         <ScrollAnimation animateIn="fadeInUp">
           <p className="text-[1rem] md:text-[1.8rem]">Hello <img src={Hello} alt="Hello" width="20px" />, I'm</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={200}>
-          <h1 className="text-[4rem] md:text-[7rem]">Atharva Rakshak</h1>
+          <h1 className="text-[4rem] md:text-[4rem] text-white">Atharva Rakshak</h1>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={400}>
           <h3>Full Stack Developer</h3>
@@ -46,10 +56,8 @@ export function Hero() {
           </div>
         </ScrollAnimation>
       </div>
-      <div className="hero-image">
-        <ScrollAnimation animateIn="fadeInRight" delay={3000}>
-          <img src={Illustration} alt="Ilustração" className="w-96" />
-        </ScrollAnimation>
+      <div className="hero-image relative z-10 border-2 border-white h-screen w-[50%] ml-4 hidden md:inline-block">
+      <canvas id='canvas3d' className='h-full w-full'></canvas>
       </div>
     </div>
   );

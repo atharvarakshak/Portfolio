@@ -55,3 +55,23 @@
 #preloader.fade-out {
   opacity: 0;
 }
+.bg-theme {
+  background-image: linear-gradient( 0.2deg,  rgba(40, 173, 222,1) 4.8%, rgb(27, 76, 224) 85.5% );
+}
+.clip-path {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
+}  
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+  background-size: 600% 100%;
+  animation: gradient 16s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes gradient {
+  0% {background-position: 0%}
+  100% {background-position: 100%}
+}

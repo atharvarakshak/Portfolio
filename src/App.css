@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 }
+
+
+#preloader{
+  background: #000 url(assets/images/preloader.gif) center;
+  background-repeat: no-repeat ;
+  background-size: 20%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  
+  
+
+}

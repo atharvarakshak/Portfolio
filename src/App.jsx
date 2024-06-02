@@ -2,14 +2,25 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { GlobalStyle } from './components/GlobalStyle'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import { Hero } from './components/Hero'
+import About from './components/About'
+// import Header from './components/Header'
+// import Footer from './components/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1 className='bg-black text-white'>Welcome to portfolio</h1>
-    </>
+      <GlobalStyle/>
+      <Header/>
+      <Hero/>
+      <About/>
+      <Footer/>
+   </>
   )
 }
 

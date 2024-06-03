@@ -11,10 +11,14 @@ import telegram from '../assets/images/telegram.svg';
 import { Application } from '@splinetool/runtime';
 
 export function Hero() {
+
   useEffect(() => {
     const canvas = document.getElementById('canvas3d');
     const app = new Application(canvas);
     app.load('https://prod.spline.design/Rh05bwmffWv5jmWc/scene.splinecode');
+
+
+
     
   }, []);
 

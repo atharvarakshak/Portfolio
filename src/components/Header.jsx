@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <div className="navbar shadow-md w-full  fixed z-[90] top-0 left-0 rounded-lg "> 
-      <div className="md:flex items-center justify-between bg-gray-800 py-4 md:px-10 px-7  ">
+      <div className="md:flex items-center justify-between wrapper bg-theme py-6 md:px-10 px-7  ">
         {/* Logo section */}
         <div className="font-bold text-2xl cursor-pointer flex items-center gap-1">
           <a href="/">
@@ -33,7 +33,7 @@ const Header = () => {
         </div>
         {/* Link items */}
         <ul
-          className={` md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-gray-800 md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-1000 ease-out  ${
+          className={` md:flex md:items-center md:pb-0 pb-12 absolute md:static  wrapper bg-theme md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-1000 ease-out  ${
             open ? "top-12 z-[-1]" : "top-[-490px]"
           }`}
           style={{ zIndex: 90 }}

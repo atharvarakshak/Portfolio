@@ -75,3 +75,6 @@
   0% {background-position: 0%}
   100% {background-position: 100%}
 }
+.blur-effect-theme {
+  @apply bg-gray-300/50 bg-clip-padding backdrop-filter backdrop-blur bg-opacity-50 opacity-100 z-[100] shadow-sm shadow-slate-100 transition-all duration-300;
+}

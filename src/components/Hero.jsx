@@ -23,9 +23,9 @@ export function Hero() {
   }, []);
 
   return (
-    <div id="home" className="flex items-center justify-evenly p-8 md:p-20 border-2 border-white h-screen">
+    <div id="home" className="flex items-center justify-evenly p-8 md:p-20  h-screen">
       <div className='wrapper bg-theme h-screen lg:h-screen md:h-[65vh] sm:h-[55vh] w-auto absolute top-0 left-0 right-0 opacity-100 z-0'></div>
-      <div className="hero-text border-2 border-white max-h-screen p-8 relative z-10">
+      <div className="hero-text border-2 max-h-screen p-8 relative z-10 mt-8 text-left">
         <ScrollAnimation animateIn="fadeInUp">
           <p className="text-[1rem] md:text-[1.8rem]">Hello <img src={Hello} alt="Hello" width="20px" />, I'm</p>
         </ScrollAnimation>
@@ -60,7 +60,7 @@ export function Hero() {
           </div>
         </ScrollAnimation>
       </div>
-      <div className="hero-image relative z-10 border-2 border-white h-screen w-[50%] ml-4 hidden md:inline-block">
+      <div className="hero-image relative z-10 h-screen w-[50%] ml-4 hidden md:inline-block">
       <canvas id='canvas3d' className='h-full w-full'></canvas>
       </div>
     </div>

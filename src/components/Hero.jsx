@@ -9,6 +9,8 @@ import whatsapp from '../assets/images/whatsapp.svg';
 import Hello from '../assets/images/Hello.gif';
 import telegram from '../assets/images/telegram.svg';
 import { Application } from '@splinetool/runtime';
+import Type from './Type';
+import 'animate.css/animate.min.css';
 
 export function Hero() {
 
@@ -23,28 +25,27 @@ export function Hero() {
   }, []);
 
   return (
-    <div id="home" className="flex items-center justify-evenly p-8 md:p-20  h-screen">
-      <div className='wrapper bg-theme h-screen lg:h-screen md:h-[65vh] sm:h-[55vh] w-auto absolute top-0 left-0 right-0 opacity-100 z-0'></div>
-      <div className="hero-text border-2 max-h-screen p-8 relative z-10 mt-8 text-left">
-        <ScrollAnimation animateIn="fadeInUp">
-          <p className="text-[1rem] md:text-[1.8rem]">Hello <img src={Hello} alt="Hello" width="20px" />, I'm</p>
+    <div id="home" className="flex items-center justify-evenly p-8 md:p-20  h-screen ">
+      <div className='wrapper h-screen  w-auto absolute top-0 left-0 right-0 opacity-100 z-0 p-4 '>
+        
+      </ div>
+      <div className="hero-text  max-h-screen w-full md:w-[50%] p-8 relative z-10 mt-8 text-left ">
+        <ScrollAnimation animateIn="fadeInUp" delay={200}>
+          <p className="flex text-[1.2rem] md:text-[1.8rem] w-full  "> Hello  &nbsp;&nbsp;<img src={Hello} alt="Hello" className='w-8' />, I'm</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={200}>
-          <h1 className="text-[4rem] md:text-[4rem] text-white">Atharva Rakshak</h1>
+          <h1 className="text-4xl md:text-[3.5rem]  text-white dark:text-gray-800  font-customFont mt-4">Atharva Rakshak</h1>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={400}>
-          <h3>Full Stack Developer</h3>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={600}>
-          <p className="small-resume">4 Years of Experience</p>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={800}>
-          <BrowserRouter>
-            <NavHashLink smooth to="#contact" className="button">Contact</NavHashLink>
-          </BrowserRouter>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={1000}>
-          <div className="social-media flex justify-center gap-4 mt-4">
+        <div className="text-xl md:text-3xl lg:text-4xl mt-4">
+          
+          <Type />
+        </div>
+
+        <button className='rounded-2xl border-2 border-white p-2 mt-4 dark:border-gray-800 text-white bg-green-500'>
+          Contact
+        </button>
+        <ScrollAnimation animateIn="fadeInUp" delay={200}>
+          <div className="social-media flex justify-start gap-4 mt-4 ">
             <a href="https://www.linkedin.com/in/atharva-rakshak-b53025257/" target="_blank" rel="noreferrer">
               <img src={linkedin} alt="Linkedin" className="w-12" />
             </a>

@@ -10,7 +10,7 @@ function Footer() {
   return (
     <div className="bg-gray-800 py-4 px-28 flex items-center md:justify-between flex-wrap text-white  w-full justify-center">
       <a href="https://portfolio-cyan-kappa-37.vercel.app" className="text-2xl font-bold">
-        <span>https://atharvarakshak.in</span>
+        <span>https://atharvarakshak.vercel.app/</span>
         {/* <span>singh.in</span> */}
       </a>
       <div>

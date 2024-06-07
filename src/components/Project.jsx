@@ -1,13 +1,14 @@
 import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+import ScrollAnimation from "react-animate-on-scroll";
 import githubIcon from '../assets/images/github.svg';
 import externalLink from '../assets/images/external-link-icon.svg';
 
  function Project() {
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({ duration: 1000, once: true });
+  // }, []);
 
   const projects = [
     {
@@ -55,10 +56,12 @@ import externalLink from '../assets/images/external-link-icon.svg';
 
   return (
     <section id="project" className="mt-60">
-      <h2 className="text-center text-4xl mb-12">My Projects</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
+      <h2 className="text-center text-4xl mb-12 dark:text-white">My Projects</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4  ">
         {projects.map((project, index) => (
-          <div key={index} className="p-6 bg-gray-800 dark:bg-gray-100 dark:text-black text-white rounded-lg transition-transform transform hover:-translate-y-2" data-aos="flip-in-x">
+        <ScrollAnimation animateIn="animate__flipInX">
+
+          <div key={index} className="p-6 bg-gray-800 dark:bg-gray-100 dark:text-black text-white rounded-lg transition-transform transform hover:-translate-y-2 border-2 border-red-600 h-full" >
             <header className="flex items-center justify-between text-green-400 mb-8">
               <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"> 
                 <title>Folder</title> 
@@ -89,6 +92,7 @@ import externalLink from '../assets/images/external-link-icon.svg';
               </ul>
             </footer>
           </div>
+        </ScrollAnimation>
         ))}
       </div>
     </section>

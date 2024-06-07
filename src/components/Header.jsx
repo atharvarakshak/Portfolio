@@ -37,7 +37,7 @@ const Header = () => {
     <div
       className={
         !navState
-          ? "absolute top-7 left-0 right-0 opacity-100 z-30 flex justify-between px-7 md:px-8   dark:border-gray-700 " 
+          ? "absolute top-7 left-0 right-0 opacity-100 z-30 flex justify-between px-7 md:px-8   dark:border-gray-700  " 
           : "fixed top-0 left-0 right-0 h-[9vh] flex items-center justify-between  opacity-100 z-[200] blur-effect-theme dark:bg-gray-600/50 "
       }
     >
@@ -72,8 +72,8 @@ const Header = () => {
 
       {/* Link items */}
       <ul
-        className={` md:flex md:items-center md:pb-0 pb-12 absolute md:static    md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-1000 ease-out  ${
-          open ? "top-12 z-[-1]  " : "top-[-490px]"
+        className={` md:flex md:items-center md:pb-0 pb-12 absolute md:static    md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-1000 ease-out   ${
+          open ? "top-12 z-[-1]  dark:blur-effect-darktheme" : "top-[-490px]"
         }   ${!open ? "" : "blur-effect-theme"}`}
         style={{ zIndex: 90 }}
       >
@@ -87,7 +87,7 @@ const Header = () => {
             </a>
           </li>
         ))}
-        <button className="btnhover:bg-[#ea9f59] text-white md:ml-8 font-semibold px-3 py-1 rounded duration-300 md:static">
+        <button className="hover:text-blue-500 text-white md:ml-8 font-semibold px-3 py-1 rounded duration-300 md:static">
           Resume
         </button>
         <div className={` ${!open ? "mr-2 ml-2" : "hidden duration-100"}`}>

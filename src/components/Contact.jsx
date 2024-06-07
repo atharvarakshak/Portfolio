@@ -6,7 +6,7 @@ import Form  from "./Form";
   return (
     <section id="contact" className="mt-40">
       <header className="text-center">
-        <h2 className="text-4xl">Contact</h2>
+        <h2 className="text-4xl dark:text-white">Contact</h2>
         <p className="text-green-500 font-medium">Ready to get started on your project?</p>
         <p className="text-green-500 font-medium">Contact me now for a Free consultation.</p>
       </header>

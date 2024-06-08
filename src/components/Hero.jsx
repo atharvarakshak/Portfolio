@@ -28,7 +28,7 @@ export function Hero() {
           <p className="flex text-[1.2rem] md:text-[1.8rem] w-full"> Hello  &nbsp;&nbsp;<img src={Hello} alt="Hello" className='w-8' />, I'm</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="animate__fadeInUp" delay={600} animateOnce={false}>
-          <h1 className="text-4xl md:text-[3.5rem] text-white dark:text-gray-800 font-customFont mt-4">Atharva Rakshak</h1>
+          <h1 className="text-4xl md:text-[3.5rem] text-white dark:text-gray-800 font-customFont mt-4 font-bold">Atharva Rakshak</h1>
         </ScrollAnimation>
         <div className="text-xl md:text-3xl lg:text-4xl mt-4">
           <Type />

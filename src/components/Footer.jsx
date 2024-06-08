@@ -8,7 +8,7 @@ import instagramIcon from '../assets/images/instagram.svg'
 
 function Footer() {
   return (
-    <div className="bg-gray-800 py-4 px-8 flex items-center md:justify-between flex-wrap text-white  w-full justify-center border-2 ">
+    <div className="bg-gray-800 py-4 px-8 flex items-center md:justify-between flex-wrap text-white  w-full justify-center relative z-50 ">
       <a href="https://atharvarakshak.vercel.app/" className="text-lg md:text-2xl font-bold ">
         <span>https://atharvarakshak.vercel.app/</span>
         {/* <span>singh.in</span> */}
@@ -20,6 +20,7 @@ function Footer() {
           {/* <span>❤️</span> */}
         </p>
       </div>
+      
       <div className="flex items-center gap-6 mt-2 ">
         <a
           href="https://www.linkedin.com/in/atharva-rakshak-b53025257/"

@@ -56,7 +56,7 @@ import externalLink from '../assets/images/external-link-icon.svg';
 
   return (
     <section id="project" className="mt-60">
-      <h2 className="text-center text-4xl mb-12 dark:text-white">My Projects</h2>
+      <h2 className="text-center text-4xl mb-12 dark:text-white font-extrabold">My Projects</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4  ">
         {projects.map((project, index) => (
         <ScrollAnimation animateIn="animate__flipInX">

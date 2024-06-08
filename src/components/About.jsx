@@ -18,7 +18,7 @@ export function About() {
   return (
     <section id="about" className="mt-28 grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
       <div className="flex flex-col dark:text-white">
-        <ScrollAnimation animateIn="animate__fadeInLeft" duration={1.5}>
+        <ScrollAnimation animateIn="animate__fadeInLeft">
           <h2 className="text-3xl text-green-500 mb-8">About me</h2>
         </ScrollAnimation>
         <ScrollAnimation animateIn="animate__fadeInLeft" delay={100} duration={1.5}>

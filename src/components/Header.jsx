@@ -3,7 +3,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import ThemeChanger from "./ThemeChanger";
 import logo from "../assets/images/logor.png";
-
+import resume from "../assets/resume-6-24.pdf";
 const Header = () => {
   const [navState, setNavState] = useState(false);
   const [open, setOpen] = useState(false);
@@ -27,6 +27,11 @@ const Header = () => {
   const toggleMenu = () => {
     setOpen(!open);
   };
+
+  const downloadResume = () => {
+    
+  
+  }
 
   return (
     <div
@@ -122,9 +127,13 @@ const Header = () => {
             Contact
           </Link>
         </li>
-        <button className="hover:text-blue-500 text-white md:ml-8 font-semibold px-3 py-1 rounded duration-300 md:static">
+        <a
+          href={resume} 
+          download
+          className="hover:text-blue-500 text-white md:ml-8 font-semibold px-3 py-1 rounded duration-300 md:static"
+        >
           Resume
-        </button>
+        </a>
         <div className={`${!open ? "mr-2 ml-2" : "hidden duration-100"}`}>
           <ThemeChanger />
         </div>

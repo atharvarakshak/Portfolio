@@ -3,7 +3,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import ThemeChanger from "./ThemeChanger";
 import logo from "../assets/images/logor.png";
-import resume from "../assets/resume-6-24.pdf";
+import resume from "../assets/resume_4_8_25_without_Photo.pdf";
 const Header = () => {
   const [navState, setNavState] = useState(false);
   const [open, setOpen] = useState(false);
